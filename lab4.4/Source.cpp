@@ -5,9 +5,9 @@
 // Варіант 17
 
 
-#include <iostream>
-#include <iomanip>
-#include <cmath>
+#include  <iostream>
+#include  <iomanip>
+#include  <cmath>
 using namespace std;
 int main()
 {
@@ -28,7 +28,7 @@ int main()
 			y = 1;
 		else
 			if (-1 - R < x && x < -1)
-				y = -sqrt((R * R) - (x + 1) * (x + 1));
+				y = (-sqrt((R * R) - (x + 1) * (x + 1)));
 			else
 				if (-1 < x && x < 2)
 					y = -R;
