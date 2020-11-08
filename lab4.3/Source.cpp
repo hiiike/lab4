@@ -1,13 +1,13 @@
 // Lab_03_4.cpp
-// Кульба Андрый
+// Кульба Андрій
 // Лабораторна робота № 4.3
 //Табуляція функції, заданої формулою: функція з параметрами
 // Варіант 17
 
 
-#include <iostream>
-#include <iomanip>
-#include <cmath>
+#include  <iostream>
+#include  <iomanip>
+#include  <cmath>
 using namespace std;
 int main()
 {
@@ -19,9 +19,10 @@ int main()
 	cout << "b = "; cin >> b;
 	cout << "c = "; cin >> c;
 	cout << fixed;
-	cout << "------------" << endl;
-	cout << "|" << setw(10) << "x" << "|" << endl;
-	cout << "------------" << endl;
+	cout << "----------------------" << endl;
+	cout << "|" << setw(9) << " x " << "|" 
+		<< setw(10) << " f " << "|" << endl;
+	cout << "----------------------" << endl;
 	x = xp;
 	while (x <= xk)
 	{
@@ -32,10 +33,11 @@ int main()
 				F = (x - a) / (x - c);
 			else
 				F = -x / (a - c);
-		cout	<< "|" << setw(9) << setprecision(3) << F
+		cout	<< "|" << setw(9) << setprecision(3) << x
+			<< "|" << setw(9) << setprecision(3) << F
 			<< " |" << endl;
 		x += dx;
 	}
-	cout << "------------" << endl;
+	cout << "----------------------" << endl;
 	return 0;
 }
